@@ -59,15 +59,15 @@ FrescoHelper.loadFrescoImage(frescoImageView, recyclerDataModel.getUrl(), R.mipm
 
 ```
 
-### 带有<a href="https://github.com/wasabeef/fresco-processors">fresco-processors</a>各种处理特效，高斯，五角形等。
+* ### 带有<a href="https://github.com/wasabeef/fresco-processors">fresco-processors</a>各种处理特效，高斯，五角形等。
 
 <img src="https://github.com/wasabeef/fresco-processors/raw/master/art/demo.gif" width="240px" height="426px"/>
 
 
-### 带有<a href="https://github.com/davemorrissey/subsampling-scale-image-view">subsampling-scale-image-view</a>实现超高清图片超长图片不模糊显示。
+* ### 带有<a href="https://github.com/davemorrissey/subsampling-scale-image-view">subsampling-scale-image-view</a>实现超高清图片超长图片不模糊显示。
 
 <img src="https://github.com/CarGuo/FrescoUtils/blob/master/01.gif" width="240px" height="426px"/>
 
-### 带有<a href="https://github.com/ongakuer/PhotoDraweeView">PhotoDraweeView</a> 功能与PhotoView一样，支持双击放大，单击返回，手动放大与缩小等。
+* ### 带有<a href="https://github.com/ongakuer/PhotoDraweeView">PhotoDraweeView</a> 功能与PhotoView一样，支持双击放大，单击返回，手动放大与缩小等。
 
 <img src="https://github.com/ongakuer/PhotoDraweeView/raw/master/screenshot.gif" width="240px" height="426px"/>
