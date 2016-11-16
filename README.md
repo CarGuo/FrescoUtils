@@ -63,4 +63,4 @@ FrescoHelper.loadFrescoImage(frescoImageView, recyclerDataModel.getUrl(), R.mipm
 
 ### 带有<a href="https://github.com/davemorrissey/subsampling-scale-image-view">subsampling-scale-image-view</a>实现超高清图片超长图片不模糊显示。
 
-### 带有a href="https://github.com/ongakuer/PhotoDraweeView">PhotoDraweeView</a> 功能与PhotoView一样，支持双击放大，单击返回，手动放大与缩小等。
+### 带有<a href="https://github.com/ongakuer/PhotoDraweeView">PhotoDraweeView</a> 功能与PhotoView一样，支持双击放大，单击返回，手动放大与缩小等。
