@@ -1,7 +1,5 @@
-<h4>Fresco 常用的封装，简单易上手，图像处理，超大图预览，缩放放大等一一俱全</h4>
+<h4>Fresco 的封装，快速上手，图像后处理，超大图高清预览，缩小放大，双击放大等一一俱全。</h4>
 ======================
-
-
 
 <h4> JCenter提交中，估计一天后</h4>
 
@@ -17,6 +15,15 @@
 <img src="https://github.com/CarGuo/RecordWave/blob/master/02.gif" width="240px" height="426px"/>
 <p></p>
 
+### 记得记得在Application里初始化
+
+```
+ImagePipelineConfig config = ImagePipelineConfig.newBuilder(this)
+        .setDownsampleEnabled(true)
+        .build();
+Fresco.initialize(this, config);
+
+```
 
 ### FrescoHelper 封装了针对  <a href="https://github.com/HomHomLin/FrescoImageView">FrescoImageView</a> 的工具类，直接使用FrescoImageView作为ImageView使用即可。
 

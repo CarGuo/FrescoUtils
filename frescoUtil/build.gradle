@@ -37,3 +37,5 @@ dependencies {
     compile viewDependencies.frescoPhoto
     compile viewDependencies.gpuImage
 }
+
+apply from: '../bintray.gradle'
