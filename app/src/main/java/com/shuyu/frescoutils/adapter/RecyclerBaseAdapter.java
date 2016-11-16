@@ -32,7 +32,7 @@ public class RecyclerBaseAdapter extends RecyclerView.Adapter {
                                                       int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.list_item_layout, parent, false);
         final RecyclerItemViewHolder holder = new RecyclerItemViewHolder(context, v);
-        holder.creatView(v);
+        holder.createView(v);
         return holder;
 
     }
@@ -40,7 +40,7 @@ public class RecyclerBaseAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
         RecyclerItemViewHolder recyclerItemViewHolder = (RecyclerItemViewHolder) holder;
-        recyclerItemViewHolder.bind(itemDataList.get(position));
+        recyclerItemViewHolder.bind(itemDataList.get(position), position);
     }
 
     @Override

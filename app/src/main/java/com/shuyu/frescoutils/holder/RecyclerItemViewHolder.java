@@ -9,6 +9,7 @@ import com.shuyu.frescoutil.FrescoHelper;
 import com.shuyu.frescoutils.R;
 import com.shuyu.frescoutils.model.RecyclerDataModel;
 
+import jp.wasabeef.fresco.processors.BlurPostprocessor;
 import lib.lhh.fiv.library.FrescoImageView;
 
 /**
@@ -25,12 +26,16 @@ public class RecyclerItemViewHolder extends RecyclerView.ViewHolder {
         this.context = context;
     }
 
-    public void creatView(View view) {
+    public void createView(View view) {
         frescoImageView = (FrescoImageView) view.findViewById(R.id.image_item);
     }
 
-    public void bind(RecyclerDataModel recyclerDataModel) {
-        FrescoHelper.loadFrescoImage(frescoImageView, recyclerDataModel.getUrl(), R.mipmap.ic_launcher, 2, false,  recyclerDataModel.getSize());
+    public void bind(RecyclerDataModel recyclerDataModel, int position) {
+        if (position == 2) {
+            FrescoHelper.loadFrescoImage(frescoImageView, recyclerDataModel.getUrl(), R.mipmap.ic_launcher, 2, false, recyclerDataModel.getSize(), new BlurPostprocessor(context, 10));
+        } else {
+            FrescoHelper.loadFrescoImage(frescoImageView, recyclerDataModel.getUrl(), R.mipmap.ic_launcher, 2, false, recyclerDataModel.getSize());
+        }
     }
 }
 
