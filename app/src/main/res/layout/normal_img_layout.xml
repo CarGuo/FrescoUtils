@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:scaleType="fitCenter"
         fresco:actualImageScaleType="fitCenter"
         fresco:failureImage="@mipmap/ic_launcher"
         fresco:placeholderImage="@mipmap/ic_launcher"

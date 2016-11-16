@@ -32,12 +32,16 @@ public class MainActivity extends AppCompatActivity {
     @OnClick({R.id.viewPager, R.id.list})
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.viewPager:
+            case R.id.viewPager: {
                 Intent intent = new Intent(MainActivity.this, ImageViewPagerActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.list:
+            }
+            case R.id.list: {
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
                 break;
+            }
         }
     }
 }
