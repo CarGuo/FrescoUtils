@@ -1,7 +1,9 @@
 <h4>Fresco 的封装，快速上手，图像后处理，超大图高清预览，缩小放大，双击放大等一一俱全。</h4>
 ======================
 
-<h4> JCenter提交中，估计一天后</h4>
+```
+compile 'com.shuyu:FrescoUtils:1.0.0'
+```
 
 <h4><a href="http://www.jianshu.com/p/cd058a924288">简书入口 这里有详细介绍</a></h4>
 
