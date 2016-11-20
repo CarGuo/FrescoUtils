@@ -26,6 +26,8 @@ import java.util.List;
 import me.relex.photodraweeview.OnViewTapListener;
 import me.relex.photodraweeview.PhotoDraweeView;
 
+import static com.shuyu.frescoutil.FrescoHelper.loadBigImage;
+
 
 /**
  * Created by shuyu on 2016/11/16.
@@ -111,36 +113,8 @@ public class ImageAdapter extends PagerAdapter {
 
         final SubsamplingScaleImageView imageView = (SubsamplingScaleImageView) layout.findViewById(R.id.image_item);
         final String imageUri = images.get(position).getUri();
-        final Uri uri = Uri.parse((imageUri.startsWith("http")) ? imageUri : (imageUri.startsWith("file://")) ? imageUri : "file://" + imageUri);
 
-        if (imageUri.startsWith("http")) {
-            File file = FrescoHelper.getCache(context, uri);
-            if (file != null && file.exists()) {
-                imageView.setImage(ImageSource.uri(file.getAbsolutePath()));
-            } else {
-                FrescoHelper.getFrescoImg(context, imageUri, 0, 0, new LoadFrescoListener() {
-                    @Override
-                    public void onSuccess(Bitmap bitmap) {
-                        handler.post(new Runnable() {
-                            @Override
-                            public void run() {
-                                File file = FrescoHelper.getCache(context, uri);
-                                if (file != null && file.exists()) {
-                                    imageView.setImage(ImageSource.uri(file.getAbsolutePath()));
-                                }
-                            }
-                        });
-                    }
-
-                    @Override
-                    public void onFail() {
-
-                    }
-                });
-            }
-        } else {
-            imageView.setImage(ImageSource.uri(imageUri.replace("file://", "")));
-        }
+        FrescoHelper.loadBigImage(context, imageView,  imageUri, R.mipmap.ic_launcher);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override

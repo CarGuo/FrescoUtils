@@ -2,7 +2,21 @@
 ======================
 
 ```
-compile 'com.shuyu:FrescoUtils:1.0.0'
+compile 'com.shuyu:FrescoUtils:1.0.1'
+```
+
+## 1.0.1 增加了额FrescoHelper直接超大图加载接口
+
+```
+/**
+ * 超大图片的就接口
+ *
+ * @param context   上下玩
+ * @param imageView 图片加载控件
+ * @param imageUri  图片地址
+ * @param defaultId 默认失败图片
+ */
+public static void loadBigImage(final Context context, final SubsamplingScaleImageView imageView, String imageUri, final int defaultId)
 ```
 
 <h4><a href="http://www.jianshu.com/p/cd058a924288">简书入口 这里有详细介绍</a></h4>

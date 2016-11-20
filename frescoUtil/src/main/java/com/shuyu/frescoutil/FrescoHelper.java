@@ -5,7 +5,10 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.net.Uri;
+import android.os.Handler;
 
+import com.davemorrissey.labs.subscaleview.ImageSource;
+import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 import com.facebook.binaryresource.BinaryResource;
 import com.facebook.binaryresource.FileBinaryResource;
 import com.facebook.cache.common.CacheKey;
@@ -26,6 +29,7 @@ import com.facebook.imagepipeline.request.Postprocessor;
 import com.shuyu.frescoutil.listener.LoadFrescoListener;
 
 import java.io.File;
+import java.net.URI;
 
 import lib.lhh.fiv.library.FrescoImageView;
 
@@ -57,6 +61,48 @@ public class FrescoHelper {
             imageView.loadLocalImage(uri, defaultImg);
         } else {
             imageView.loadView(uri, defaultImg);
+        }
+    }
+
+
+    /**
+     * 超大图片的就接口
+     *
+     * @param context   上下玩
+     * @param imageView 图片加载控件
+     * @param imageUri  图片地址
+     * @param defaultId 默认失败图片
+     */
+    public static void loadBigImage(final Context context, final SubsamplingScaleImageView imageView, String imageUri, final int defaultId) {
+        final Uri uri = Uri.parse((imageUri.startsWith("http")) ? imageUri : (imageUri.startsWith("file://")) ? imageUri : "file://" + imageUri);
+        final Handler handler = new Handler();
+        if (imageUri.startsWith("http")) {
+            File file = FrescoHelper.getCache(context, uri);
+            if (file != null && file.exists()) {
+                imageView.setImage(ImageSource.uri(file.getAbsolutePath()));
+            } else {
+                FrescoHelper.getFrescoImg(context, imageUri, 0, 0, new LoadFrescoListener() {
+                    @Override
+                    public void onSuccess(Bitmap bitmap) {
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                File file = FrescoHelper.getCache(context, uri);
+                                if (file != null && file.exists()) {
+                                    imageView.setImage(ImageSource.uri(file.getAbsolutePath()));
+                                }
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onFail() {
+                        imageView.setImage(ImageSource.resource(defaultId));
+                    }
+                });
+            }
+        } else {
+            imageView.setImage(ImageSource.uri(imageUri.replace("file://", "")));
         }
     }
 
@@ -163,7 +209,7 @@ public class FrescoHelper {
      * @param listener  回调
      */
     public static void getFrescoImgProcessor(Context context, final String url, final int width, final int height,
-                                              BasePostprocessor processor, final LoadFrescoListener listener) {
+                                             BasePostprocessor processor, final LoadFrescoListener listener) {
 
         ResizeOptions resizeOptions = null;
         if (width != 0 && height != 0) {
