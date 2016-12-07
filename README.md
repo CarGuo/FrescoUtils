@@ -1,10 +1,25 @@
 <h4>Fresco 的封装，快速上手，图像后处理，超大图高清预览，缩小放大，双击放大等一一俱全。</h4>
 ======================
 
+[![](https://jitpack.io/v/CarGuo/FrescoUtils.svg)](https://jitpack.io/#CarGuo/FrescoUtils)
+
+## 因为某些原因，现在使用jitpack.io，还请各位切换到jitpack。
+
 ```
-compile 'com.shuyu:FrescoUtils:1.0.1'
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
 ```
 
+```
+dependencies {
+    compile 'com.github.CarGuo:FrescoUtils:v1.0.1'
+}
+
+```
 ## 1.0.1 增加了额FrescoHelper直接超大图加载接口
 
 ```
