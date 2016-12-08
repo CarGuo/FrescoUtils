@@ -17,10 +17,14 @@ allprojects {
 
 ```
 dependencies {
-    compile 'com.github.CarGuo:FrescoUtils:v1.0.1'
+    compile 'com.github.CarGuo:FrescoUtils:v1.0.2'
 }
 
 ```
+
+## 1.0.2 最低API调整到15
+
+
 ## 1.0.1 增加了额FrescoHelper直接超大图加载接口
 
 ```
