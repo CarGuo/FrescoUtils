@@ -38,4 +38,4 @@ dependencies {
     compile viewDependencies.gpuImage
 }
 
-apply from: '../bintray.gradle'
+//apply from: '../bintray.gradle'
