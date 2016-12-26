@@ -17,10 +17,12 @@ allprojects {
 
 ```
 dependencies {
-    compile 'com.github.CarGuo:FrescoUtils:v1.0.2'
+    compile 'com.github.CarGuo:FrescoUtils:v1.0.3'
 }
 
 ```
+
+## 1.0.3 update fresco to 1.0.0
 
 ## 1.0.2 最低API调整到15
 
