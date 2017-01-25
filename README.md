@@ -6,6 +6,7 @@
 
 ## 因为某些原因，现在使用jitpack.io，还请使用依赖的各位切换到jitpack。
 
+#### 在project下的build.gradle添加
 ```
 allprojects {
 	repositories {
@@ -14,18 +15,18 @@ allprojects {
 	}
 }
 ```
-
+#### 在module下的build.gradle添加
 ```
 dependencies {
-    compile 'com.github.CarGuo:FrescoUtils:v1.0.3'
+    compile 'com.github.CarGuo:FrescoUtils:v1.0.4'
 }
 
 ```
+## 1.0.4 update fresco to 1.0.1，update scaleImage to 3.6.0
 
 ## 1.0.3 update fresco to 1.0.0
 
 ## 1.0.2 最低API调整到15
-
 
 ## 1.0.1 增加了额FrescoHelper直接超大图加载接口
 

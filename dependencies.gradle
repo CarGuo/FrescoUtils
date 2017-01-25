@@ -17,11 +17,11 @@ ext {
     butterKnifeVersion = '8.2.1'
 
 
-    fresco = '1.0.0'
-    frescoGif = '1.0.0'
+    fresco = '1.0.1'
+    frescoGif = '1.0.1'
     frescoPhoto = "1.1.2"
     gpuImage = '1.3.0'
-    scaleImage = '3.5.0'
+    scaleImage = '3.6.0'
 
     androidDependencies = [
             recyclerView: "com.android.support:recyclerview-v7:${supportLibraryVersion}",
