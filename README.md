@@ -49,7 +49,10 @@ public static void loadBigImage(final Context context, final SubsamplingScaleIma
 <img src="https://github.com/CarGuo/FrescoUtils/blob/master/02.jpg" width="240px" height="426px"/>
 <p></p>
 
-###动态图效果
+
+### 动态图效果
+
+
 <img src="https://github.com/CarGuo/FrescoUtils/blob/master/01.gif" width="240px" height="426px"/>
 <img src="https://github.com/CarGuo/FrescoUtils/blob/master/02.gif" width="240px" height="426px"/>
 <p></p>
