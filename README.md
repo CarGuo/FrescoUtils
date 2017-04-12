@@ -18,10 +18,13 @@ allprojects {
 #### 在module下的build.gradle添加
 ```
 dependencies {
-    compile 'com.github.CarGuo:FrescoUtils:v1.0.4'
+    compile 'com.github.CarGuo:FrescoUtils:v1.0.5'
 }
 
 ```
+
+## 1.0.5 update fresco to 1.2.0；移除无用依赖；
+
 ## 1.0.4 update fresco to 1.0.1，update scaleImage to 3.6.0
 
 ## 1.0.3 update fresco to 1.0.0

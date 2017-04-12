@@ -30,5 +30,7 @@ dependencies {
     apt viewDependencies.apt_butterKnife
     compile viewDependencies.butterKnife
     compile androidDependencies.recyclerView
+    compile androidDependencies.appcompat_v7
+    compile androidDependencies.support_v4
     compile project(':frescoUtil')
 }

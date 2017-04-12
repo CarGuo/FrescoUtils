@@ -27,10 +27,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    def androidDependencies = rootProject.ext.androidDependencies
     def viewDependencies = rootProject.ext.viewDependencies
-    compile androidDependencies.appcompat_v7
-    compile androidDependencies.support_v4
     compile viewDependencies.scaleImage
     compile viewDependencies.fresco
     compile viewDependencies.frescoGif

@@ -17,8 +17,8 @@ ext {
     butterKnifeVersion = '8.2.1'
 
 
-    fresco = '1.0.1'
-    frescoGif = '1.0.1'
+    fresco = '1.2.0'
+    frescoGif = '1.2.0'
     frescoPhoto = "1.1.2"
     gpuImage = '1.3.0'
     scaleImage = '3.6.0'
