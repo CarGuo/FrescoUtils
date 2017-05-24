@@ -23,17 +23,17 @@ dependencies {
 
 ```
 
-## 1.0.6 update fresco to 1.3.0；
+* 1.0.6 update fresco to 1.3.0；
 
-## 1.0.5 update fresco to 1.2.0；移除无用依赖；
+* 1.0.5 update fresco to 1.2.0；移除无用依赖；
 
-## 1.0.4 update fresco to 1.0.1，update scaleImage to 3.6.0
+* 1.0.4 update fresco to 1.0.1，update scaleImage to 3.6.0
 
-## 1.0.3 update fresco to 1.0.0
+* 1.0.3 update fresco to 1.0.0
 
-## 1.0.2 最低API调整到15
+* 1.0.2 最低API调整到15
 
-## 1.0.1 增加了额FrescoHelper直接超大图加载接口
+* 1.0.1 增加了额FrescoHelper直接超大图加载接口
 
 ```
 /**
