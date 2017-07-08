@@ -43,6 +43,18 @@ public class FrescoHelper {
 
 
     /**
+     * @param imageView  图片加载控件
+     * @param loadOption 加载配置构造器
+     */
+    public static void loadFrescoImage(FrescoImageView imageView, LoadOption loadOption) {
+
+        loadFrescoImage(imageView, loadOption.uri, loadOption.defaultImg,
+                loadOption.cornerRadius, loadOption.isCircle, loadOption.loadLocalPath, loadOption.isAnima,
+                loadOption.size, loadOption.postprocessor);
+    }
+
+
+    /**
      * @param imageView     图片加载控件
      * @param uri           路径或者URL
      * @param defaultImg    默认图片

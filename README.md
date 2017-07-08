@@ -18,9 +18,20 @@ allprojects {
 #### 在module下的build.gradle添加
 ```
 dependencies {
-    compile 'com.github.CarGuo:FrescoUtils:v1.0.6'
+    compile 'com.github.CarGuo:FrescoUtils:v1.0.7'
 }
 
+```
+
+
+* 1.0.7 增加option配置方法；
+
+```
+/**
+ * @param imageView  图片加载控件
+ * @param loadOption 加载配置构造器
+ */
+public static void loadFrescoImage(FrescoImageView imageView, LoadOption loadOption) 
 ```
 
 * 1.0.6 update fresco to 1.3.0；
