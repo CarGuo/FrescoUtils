@@ -18,10 +18,14 @@ allprojects {
 #### 在module下的build.gradle添加
 ```
 dependencies {
-    compile 'com.github.CarGuo:FrescoUtils:v1.0.7'
+    compile 'com.github.CarGuo:FrescoUtils:v1.0.8'
 }
 
 ```
+
+* 1.0.8
+
+update fresco to 1.5.0
 
 
 * 1.0.7 增加option配置方法；
