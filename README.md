@@ -18,10 +18,16 @@ allprojects {
 #### 在module下的build.gradle添加
 ```
 dependencies {
-    compile 'com.github.CarGuo:FrescoUtils:v1.0.8'
+    compile 'com.github.CarGuo:FrescoUtils:v1.1.0'
 }
 
 ```
+* 1.1.0
+
+update fresco to 1.7.1
+update subsampling-scale-image-view to 3.9.0
+update photodraweeview to 1.1.3
+update gradle to 4.0.1
 
 * 1.0.8
 

@@ -1,12 +1,13 @@
 allprojects {
     repositories {
         jcenter()
+        google()
     }
 }
 
 ext {
     //Android
-    androidBuildToolsVersion = "23.0.1"
+    androidBuildToolsVersion = "26.0.2"
     androidMinSdkVersion = 15
     androidTargetSdkVersion = 22
     androidCompileSdkVersion = 22
@@ -17,11 +18,11 @@ ext {
     butterKnifeVersion = '8.2.1'
 
 
-    fresco = '1.5.0'
-    frescoGif = '1.5.0'
-    frescoPhoto = "1.1.2"
+    fresco = '1.7.1'
+    frescoGif = '1.7.1'
+    frescoPhoto = "1.1.3"
     gpuImage = '1.3.0'
-    scaleImage = '3.6.0'
+    scaleImage = '3.9.0'
 
     androidDependencies = [
             recyclerView: "com.android.support:recyclerview-v7:${supportLibraryVersion}",

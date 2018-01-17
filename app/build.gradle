@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.neenbedankt.android-apt'
 
 android {
 
@@ -27,7 +26,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     def viewDependencies = rootProject.ext.viewDependencies
-    apt viewDependencies.apt_butterKnife
+    annotationProcessor viewDependencies.apt_butterKnife
     compile viewDependencies.butterKnife
     compile androidDependencies.recyclerView
     compile androidDependencies.appcompat_v7
