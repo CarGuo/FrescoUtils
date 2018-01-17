@@ -22,19 +22,25 @@ dependencies {
 }
 
 ```
-* 1.1.0
+-----------------------------
+
+
+#### 1.1.0
 
 update fresco to 1.7.1
+
 update subsampling-scale-image-view to 3.9.0
+
 update photodraweeview to 1.1.3
+
 update gradle to 4.0.1
 
-* 1.0.8
+#### 1.0.8
 
 update fresco to 1.5.0
 
 
-* 1.0.7 增加option配置方法；
+#### 1.0.7 增加option配置方法；
 
 ```
 /**
