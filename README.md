@@ -1,10 +1,11 @@
-<h4>Fresco 的封装，快速上手，图像后处理，超大图高清预览，缩小放大，双击放大等一一俱全。</h4>
-======================
+## Fresco 的封装，快速上手，图像后处理，超大图高清预览，缩小放大，双击放大等一一俱全。
 
 [![](https://jitpack.io/v/CarGuo/FrescoUtils.svg)](https://jitpack.io/#CarGuo/FrescoUtils)
 [![Build Status](https://travis-ci.org/CarGuo/FrescoUtils.svg?branch=master)](https://travis-ci.org/CarGuo/FrescoUtils)
 
-## 因为某些原因，现在使用jitpack.io，还请使用依赖的各位切换到jitpack。
+### [新 GSYImageLoader 图片加载工具，集成Glide、Picasso、Fresco的图片加载管理器](https://github.com/CarGuo/GSYImageLoader)
+
+## 依赖
 
 #### 在project下的build.gradle添加
 ```
