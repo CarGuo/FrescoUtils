@@ -19,7 +19,7 @@ allprojects {
 #### 在module下的build.gradle添加
 ```
 dependencies {
-    compile 'com.github.CarGuo:FrescoUtils:v1.2.1'
+   implementation "com.github.CarGuo:FrescoUtils:c39608c9b2"
 }
 
 ```
